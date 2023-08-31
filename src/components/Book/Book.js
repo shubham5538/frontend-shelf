@@ -9,8 +9,8 @@ const Book = (props) => {
     await axios
       .delete(`https://backend-hhyi.onrender.com/books/${_id}`)
       .then((res) => res.data)
-      .then(() => history("/"))
-      .then(() => history("/books"));
+      .then(() => window.location.reload())
+      // .then(() => history("/books"));
   };
 
 
